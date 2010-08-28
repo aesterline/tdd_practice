@@ -6,5 +6,5 @@ Here are some tests that you could write:
 *  "abc " -> "abc"
 *  "abc\t" -> "abc"
 *  "  abc" -> "  abc" (does not remove beginning whitespace)
-*  "ab\n cd \n" -> "ab\ncd\n" (removes whitespace for each line)
+*  "ab\n cd \n" -> "ab\n cd\n" (removes whitespace at end of each line)
 *  "ab\r\ncd\n" -> same string (handles both Windows and Unix line endings)
