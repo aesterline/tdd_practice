@@ -1,0 +1,26 @@
+# password_complexity
+
+Determine if a given password is complex.    A password is determined to be complex if it passes the specified number of rules.
+The solution should contain at least the following rules:
+
+* number
+* upper case letters
+* lower case letters
+* special characters
+
+Examples:
+
+The following will be true if the specified number of rules is 2.
+
+"Password" -> true (upper and lower)
+"p@ssword" -> true (lower and special)
+"PASSWORD" -> false (only upper)
+
+The following will be true if the specified number of rules is 3.
+
+"pa$$word" -> false (only lower and special)
+"P@ssword" -> true (upper,lower and special)
+
+## Usage
+
+lein test
