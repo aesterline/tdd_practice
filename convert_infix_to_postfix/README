@@ -1,0 +1,6 @@
+Convert Infix expression to Postfix form
+
+Given an expression in infix form (operators appear inline in the expression) like
+3 * (2 + 5)
+Transform it to its postfix equivalent
+3 2 5 + *
