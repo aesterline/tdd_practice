@@ -18,8 +18,8 @@
 
 ;(not-any? #{ (lower-case password) } dictionary)
 
-(defn is-complex?
-  ([password] (is-complex? password default-rules 2))
+(defn complex?
+  ([password] (complex? password default-rules 2))
   ([password rules required-num-rules]
     (and 
       (not (contains? dictionary (lower-case password)))

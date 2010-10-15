@@ -7,15 +7,15 @@
 (defn- always-false [_] false)
 
 (deftest should-be-complex-when-the-required-number-of-rules-pass
-  (is (is-complex? "ab34" [always-true] 1))
-  (is (not (is-complex? "23ab!" [always-false] 2)))
-  (is (is-complex? "23rt#" [always-false always-true] 1))
-  (is (not (is-complex? "10wq!" [always-true always-false] 2))))
+  (is (complex? "ab34" [always-true] 1))
+  (is (not (complex? "23ab!" [always-false] 2)))
+  (is (complex? "23rt#" [always-false always-true] 1))
+  (is (not (complex? "10wq!" [always-true always-false] 2))))
 
 (deftest should-not-be-complex-when-the-password-is-a-dictionary-word
-  (is (not (is-complex? "password" [always-true] 1)))
-  (is (not (is-complex? "appLe" [always-true] 1)))
-  (is (not (is-complex? "TRASH" [always-true] 1))))
+  (is (not (complex? "password" [always-true] 1)))
+  (is (not (complex? "appLe" [always-true] 1)))
+  (is (not (complex? "TRASH" [always-true] 1))))
 
 (deftest contains-num-should-be-true-when-input-contains-at-least-one-number
   (is (contains-number? "a2b"))
@@ -46,7 +46,7 @@
   (is (not (contains-special? nil))))
 
 (deftest default-is-complex-should-require-two-default-rules
-  (is (not (is-complex? "@#$")))
-  (is (is-complex? "Pa$sword"))
-  (is (is-complex? "p@ssword"))
-  (is (is-complex? "123abc")))
+  (is (not (complex? "@#$")))
+  (is (complex? "Pa$sword"))
+  (is (complex? "p@ssword"))
+  (is (complex? "123abc")))
