@@ -3,7 +3,7 @@
   (use [clojure.contrib.string :only (lower-case)]))
 
 (defn- count-passing-rules [password rules]
-  (reduce + (map #(if (% password) 1 0) rules)))
+  (count (filter #(% password) rules)))
 
 (defn- make-regex-rule [re]
   (fn [s] (if s (re-matches re s))))
