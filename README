@@ -2,3 +2,5 @@ TDD Exercises
 =============
 
 This is a set of TDD exercises I use to practice TDD.   Each of the subdirectories contains a README describing the exercise contained in that directory.
+
+The master branch contains the "shell" for each exercise.   The solution branch contains the current solution.
