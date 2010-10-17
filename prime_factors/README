@@ -1,0 +1,12 @@
+=== Prime Factors ===
+Every number can be broken down into a product of primes.
+
+Create a solution that take a number an returns the prime factors for that number.
+
+1 -> []
+2 -> [2]
+3 -> [3]
+4 -> [2,2]
+6 -> [3,2]
+22 -> [11,2]
+24 -> [2,2,2,3]
