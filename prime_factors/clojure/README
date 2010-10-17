@@ -1,0 +1,9 @@
+# prime_factors
+
+Prime Factors TDD Exercise - See main README for more information.
+
+## Usage
+
+lein clean
+lein deps
+java -cp "src:test:classes:lib/*:lib/dev/*" lazytest.watch src test
