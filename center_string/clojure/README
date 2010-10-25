@@ -1,0 +1,13 @@
+Write a function that can center a string.
+
+Example:
+
+(center "abc" 5) => " abc "
+(center "abc" 6) => " abc  "
+(center "abc" 3) => "abc"
+
+Usage:
+
+lein clean
+lein deps
+java -cp "src:test:classes:lib/*:lib/dev/*" lazytest.watch src test
