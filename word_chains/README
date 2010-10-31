@@ -1,0 +1,6 @@
+Write code that will create a word chain from a start a word to an end word.
+
+Examples:
+
+cat -> cot -> cog -> dog
+lead -> load -> goad -> gold
